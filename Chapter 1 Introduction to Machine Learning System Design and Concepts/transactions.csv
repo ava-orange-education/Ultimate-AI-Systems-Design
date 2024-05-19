@@ -1,0 +1,11 @@
+transaction_id,user_id,amount,timestamp,category
+T1,U1,100.0,2023-06-01T10:30:00Z,electronics
+T2,U2,250.0,2023-06-01T11:45:00Z,travel
+T3,U1,75.0,2023-06-01T14:20:00Z,food
+T4,U3,180.0,2023-06-01T16:10:00Z,electronics
+T5,U2,90.0,2023-06-01T18:30:00Z,food
+T6,U1,120.0,2023-06-02T09:15:00Z,electronics
+T7,U3,50.0,2023-06-02T12:00:00Z,food
+T8,U2,200.0,2023-06-02T15:45:00Z,travel
+T9,U1,80.0,2023-06-02T19:20:00Z,food
+T10,U3,140.0,2023-06-03T08:30:00Z,electronics

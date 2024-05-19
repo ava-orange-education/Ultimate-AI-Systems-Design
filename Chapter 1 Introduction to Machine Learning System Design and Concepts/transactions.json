@@ -1,0 +1,32 @@
+[
+    {
+      "transaction_id": "T1",
+      "user_id": "U1",
+      "amount": 100.0,
+      "timestamp": "2023-06-01T10:30:00Z"
+    },
+    {
+      "transaction_id": "T2",
+      "user_id": "U2",
+      "amount": 250.0,
+      "timestamp": "2023-06-01T11:45:00Z"
+    },
+    {
+      "transaction_id": "T3",
+      "user_id": "U1",
+      "amount": 75.0,
+      "timestamp": "2023-06-01T14:20:00Z"
+    },
+    {
+      "transaction_id": "T4",
+      "user_id": "U3",
+      "amount": 180.0,
+      "timestamp": "2023-06-01T16:10:00Z"
+    },
+    {
+      "transaction_id": "T5",
+      "user_id": "U2",
+      "amount": 90.0,
+      "timestamp": "2023-06-01T18:30:00Z"
+    }
+  ]

@@ -1,0 +1,6 @@
+transaction_id,user_id,amount,timestamp,category,is_fraudulent
+T1,U1,100.0,2023-06-01T10:30:00Z,electronics,0
+T2,U2,250.0,2023-06-01T11:45:00Z,travel,0
+T3,U1,75.0,2023-06-01T14:20:00Z,food,0
+T4,U3,180.0,2023-06-01T16:10:00Z,electronics,1
+T5,U2,90.0,2023-06-01T18:30:00Z,food,0
