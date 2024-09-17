@@ -125,7 +125,7 @@ def train(rank, world_size, args):
     # Set up optimizer and loss function
     optimizer = optim.AdamW(model.parameters(), lr=args.learning_rate)
     criterion = nn.MSELoss()
-    scaler = torch.amp.GradScaler('cuda')  # For mixed precision training
+    scaler = torch.cuda.amp.GradScaler()  # For mixed precision training
 
     # Training loop
     for epoch in range(args.num_epochs):
@@ -137,7 +137,7 @@ def train(rank, world_size, args):
             data, targets = data.to(device), targets.to(device)
             
             # Forward pass with mixed precision
-            with torch.amp.autocast('cuda'):
+            with torch.cuda.amp.autocast():
                 outputs = model(data)
                 loss = criterion(outputs.squeeze(), targets.squeeze())
 
@@ -180,7 +180,7 @@ def run_demo(demo_fn, world_size, args):
 if __name__ == "__main__":
     # Parse command-line arguments
     parser = argparse.ArgumentParser(description="Distributed Training Example")
-    parser.add_argument("--world_size", type=int, default=2, help="Number of GPUs to use")
+    parser.add_argument("--world_size", type=int, default=3, help="Number of GPUs to use")
     parser.add_argument("--input_dim", type=int, default=2000, help="Input dimension")
     parser.add_argument("--hidden_dim", type=int, default=512, help="Hidden dimension")
     parser.add_argument("--num_layers", type=int, default=6, help="Number of layers")
